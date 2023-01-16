@@ -9,29 +9,25 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var profiles: [Profile]?
+    var viewModel: TableViewModelType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profiles = [
-            Profile(name: "John", secondName: "Smith", age: 33),
-            Profile(name: "Max", secondName: "Kolby", age: 21),
-            Profile(name: "Mark", secondName: "Salmon", age: 55)
-            ]
+        viewModel = ViewModel()
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return profiles!.count
+        return viewModel?.numberOfRows ?? 0
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellIdentifier", for: indexPath) as! TableViewCell
         
-        guard let profile = profiles?[indexPath.row] else { return fatalError("Profile coild not be assigned") as! UITableViewCell}
+        guard let profile = viewModel?.profiles[indexPath.row] else { return fatalError("Profile coild not be assigned") as! UITableViewCell}
         
         cell.ageLabel.text = "\(String(describing: profile.age))"
         cell.fullNameLabel.text = "\(String(describing: profile.name)) \(String(describing: profile.secondName))"
