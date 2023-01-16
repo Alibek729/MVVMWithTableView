@@ -16,7 +16,9 @@
 		675AD8CC29758AD600B62683 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675AD8CB29758AD600B62683 /* Profile.swift */; };
 		675AD8CE2975919B00B62683 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675AD8CD2975919B00B62683 /* TableViewCell.swift */; };
 		677D30C329759870000CA0DA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D30C229759870000CA0DA /* ViewModel.swift */; };
-		677D30C529759905000CA0DA /* TableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D30C429759905000CA0DA /* TableViewModelType.swift */; };
+		677D30C529759905000CA0DA /* TableViewViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D30C429759905000CA0DA /* TableViewViewModelType.swift */; };
+		677D30C92975A05A000CA0DA /* TableViewCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D30C82975A05A000CA0DA /* TableViewCellViewModelType.swift */; };
+		677D30CB2975A248000CA0DA /* TableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677D30CA2975A248000CA0DA /* TableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +33,9 @@
 		675AD8CB29758AD600B62683 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		675AD8CD2975919B00B62683 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		677D30C229759870000CA0DA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		677D30C429759905000CA0DA /* TableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModelType.swift; sourceTree = "<group>"; };
+		677D30C429759905000CA0DA /* TableViewViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewViewModelType.swift; sourceTree = "<group>"; };
+		677D30C82975A05A000CA0DA /* TableViewCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModelType.swift; sourceTree = "<group>"; };
+		677D30CA2975A248000CA0DA /* TableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +71,9 @@
 				675AD8B529758A4C00B62683 /* AppDelegate.swift */,
 				675AD8B729758A4C00B62683 /* SceneDelegate.swift */,
 				677D30C72975998F000CA0DA /* Protocols */,
-				677D30C62975997F000CA0DA /* ViewModel */,
-				675AD8D02975923600B62683 /* View */,
 				675AD8CF2975922D00B62683 /* Model */,
+				675AD8D02975923600B62683 /* View */,
+				677D30C62975997F000CA0DA /* ViewModel */,
 				675AD8BB29758A4C00B62683 /* Main.storyboard */,
 				675AD8BE29758A4D00B62683 /* Assets.xcassets */,
 				675AD8C029758A4D00B62683 /* LaunchScreen.storyboard */,
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				677D30C229759870000CA0DA /* ViewModel.swift */,
+				677D30CA2975A248000CA0DA /* TableViewCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -106,7 +111,8 @@
 		677D30C72975998F000CA0DA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				677D30C429759905000CA0DA /* TableViewModelType.swift */,
+				677D30C429759905000CA0DA /* TableViewViewModelType.swift */,
+				677D30C82975A05A000CA0DA /* TableViewCellViewModelType.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				675AD8B629758A4C00B62683 /* AppDelegate.swift in Sources */,
 				675AD8CA29758A9D00B62683 /* TableViewController.swift in Sources */,
 				675AD8CC29758AD600B62683 /* Profile.swift in Sources */,
-				677D30C529759905000CA0DA /* TableViewModelType.swift in Sources */,
+				677D30C529759905000CA0DA /* TableViewViewModelType.swift in Sources */,
+				677D30C92975A05A000CA0DA /* TableViewCellViewModelType.swift in Sources */,
+				677D30CB2975A248000CA0DA /* TableViewCellViewModel.swift in Sources */,
 				677D30C329759870000CA0DA /* ViewModel.swift in Sources */,
 				675AD8B829758A4C00B62683 /* SceneDelegate.swift in Sources */,
 			);
